@@ -1,4 +1,4 @@
 # Portfolio de Geoffrey ASTESIANO
 
 Objectif :
-- Créer un portfolio pur pouvoir le présenter aux différentes épreuves du BTS SIO
+- Créer un portfolio pour pouvoir le présenter aux différentes épreuves du BTS SIO
