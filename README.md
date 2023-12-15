@@ -1,2 +1,4 @@
 # Portfolio de Geoffrey ASTESIANO
-Portfolio de Geoffrey ASTESIANO, étudiant en BTS SIO
+
+Objectif :
+- Créer un portfolio pur pouvoir le présenter aux différentes épreuves du BTS SIO
