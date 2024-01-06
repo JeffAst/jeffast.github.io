@@ -13,7 +13,7 @@
         <link rel="icon" href="favicon.ico">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
               rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
+        <link href="../css/cv.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
@@ -26,12 +26,12 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item">
-                            <a href="index.html" class="nav-link">
+                            <a href="../index.html" class="nav-link">
                                 <span class="fa fa-home"></span> Accueil
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./pages/cv.html" class="nav-link">
+                            <a href="cv.html" class="nav-link">
                                 <span class="fa fa-id-badge"></span> CV
                             </a>
                         </li>
@@ -114,12 +114,18 @@
             </div>
         </nav>
         <div class="jumbotron">
-            <h1>Bonjour et bienvenu sur mon portfolio !</h1>
-            <img src="./images/AmeliaPilou.jpg" alt="Photo d'Amelia Pilou">
-                <p> Je m'appelle Geoffrey ASTESIANO, j'ai 19 ans et ce site a pour vocation de me présenter en tant que personne, en tant qu'étudiant et <br> candidat à l'obtention du BTS SIO (Services Informatiques aux Organisations) et en tant que futur professionnel de l'informatique.
-                <p><a class="btn btn-primary" href="http://www.cned.fr" target="_blank"
-                      role="button">En savoir plus »</a>
-                </p>
+            <div class="container">
+                <div class="row cadreCV">
+                    <div id="cv-entete" class="text-center">
+                        <div id="cv-photo">
+                            <img src="../images/AmeliaPilou.jpg" alt="Ma photo d'identité">
+                        </div>
+                        <div  id="cv-intro">
+                            <h1>Bonjour, je m'appelle <span>Amélia</span> et voici mon CV</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> <!-- Emplacement pour le contenu principal de la page -->
         <footer>
             <div class="container">
