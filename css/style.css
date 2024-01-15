@@ -1,0 +1,20 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 22 déc. 2023, 08:35:32
+    Author     : geoffrey.astesiano
+*/
+h1 {
+    margin-left: 360px;
+}
+.jumbotron img {
+    float : left;
+    margin-right: 10px;
+    margin-left: 360px;
+}
+.jumbotron p {
+    margin-right : 50px;
+}
+
