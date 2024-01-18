@@ -22,7 +22,7 @@ body {
 }
 #cv-photo {
     width: auto;
-    height: auto;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     padding: 5px;
