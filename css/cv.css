@@ -21,8 +21,8 @@ body {
     width: 100%;
 }
 #cv-photo {
-    width: auto;
-    height: 200px;
+    width: 172px;
+    height: 172px;
     border-radius: 50%;
     overflow: hidden;
     padding: 5px;
@@ -31,7 +31,7 @@ body {
 }
 #cv-photo img {
     width: 160px;
-    height: 160px;
+    height: 200px;
     border-radius: 50%;
 }
 #cv-intro h1 {
