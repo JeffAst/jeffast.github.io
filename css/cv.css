@@ -31,7 +31,7 @@ body {
 }
 #cv-photo img {
     width: 160px;
-    height: 200px;
+    height: 160px;
     border-radius: 50%;
 }
 #cv-intro h1 {
