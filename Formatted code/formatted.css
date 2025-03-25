@@ -314,6 +314,16 @@ noscript{
     border-radius: 50px;
     overflow: hidden;
 }
+.navbar-left-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 80px;
+    color: var(--color-white);
+}
 .navbar-tabs{
     display: flex;
     height: 100%;
