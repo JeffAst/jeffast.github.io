@@ -193,7 +193,6 @@ html {
 .setting-container {
     width: 60px;
     height: 50px;
-    margin-left: 50px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -445,6 +444,7 @@ noscript {
 
 #hello-friend,
 #work,
+.parcours-info p,
 .about-info p,
 .activeThistab,
 .language-speak article {
@@ -692,6 +692,7 @@ noscript {
 }
 
 #info-para,
+.parcours-info p,
 .about-info p {
     font-weight: 400;
     font-size: 2rem
@@ -945,6 +946,7 @@ noscript {
     transform: translate(2px, 2px)
 }
 
+.parcours-section-container,
 .about-section-container {
     width: 100%;
     height: fit-content;
@@ -955,6 +957,7 @@ noscript {
     padding-top: 200px
 }
 
+.parcours-section,
 .about-section,
 .projects-section-div,
 .skills-section {
@@ -1006,22 +1009,42 @@ noscript {
     margin-top: 30px
 }
 
+.parcours-info,
 .about-info {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column
 }
 
+.parcours-info p,
 .about-info p {
     line-height: 25px
 }
+
 
 .dp {
     width: 40%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: relative
+    position: relative;
+}
+
+.dp img {
+    width: 60%; /* L'image prend toute la largeur du conteneur */
+    height: auto; /* Garder les proportions de l'image */
+    position: relative; /* L'image reste au-dessus des ombres */
+    z-index: 1; /* L'image sera au-dessus des ombres */
+}
+
+.dp::before,
+.dp::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    height: 100%; /* Prendre toute la hauteur du conteneur */
+    z-index: -1; /* Derrière l'image */
+    transition-duration: .5s;
 }
 
 .dp::before {
@@ -1040,6 +1063,97 @@ noscript {
     transform: translate(-20px, -20px)
 }
 
+/* Conteneur principal */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  /* Ligne verticale */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Éléments de la timeline */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Alignement des éléments */
+  .timeline-item.left {
+    left: 0;
+    text-align: left;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  /* Style des blocs */
+  .content {
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 1.5rem; /* Augmente la taille du texte */
+    font-weight: bold; /* Rend le texte plus visible */
+    color: white; /* Assure que le texte est bien blanc */
+  }
+  
+  /* Points sur la ligne */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #8000ff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .timeline-item.left::before {
+    right: -7px;
+  }
+  
+  .timeline-item.right::before {
+    left: -7px;
+  }
+  
+  /* Responsive : sur mobile, les éléments seront centrés */
+  @media screen and (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+    .timeline-item {
+      width: 100%;
+      padding-left: 40px;
+      text-align: left;
+    }
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+      left: 10px;
+    }
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 0;
+    }
+  }
+  
 .skills-section-container {
     padding-top: 150px;
     width: 100%;
@@ -1400,7 +1514,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    margin-bottom: 300px;
 }
 
 .social-media-container a {
@@ -1937,6 +2052,7 @@ footer {
         font-size: 45%
     }
 
+    .parcours-section,
     .about-section,
     .projects-section-div,
     .skills-section {
