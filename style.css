@@ -1284,6 +1284,10 @@ noscript {
     transition-duration: .3s
 }
 
+#pdfModal {
+    display: none; /* cache la modale par défaut */
+  }
+  
 .tooltip {
     position: absolute;
     top: -20px;
@@ -1343,6 +1347,12 @@ footer {
     border-radius: 30px;
     border: 1px solid var(--tech-stack-box-border-color)
 }
+
+.project-box:hover {
+    transform: scale(1.03); /* ou 1.05 si tu veux un effet plus marqué */
+    cursor: pointer;
+    z-index: 1;
+  }
 
 .info-div {
     width: 50%;
@@ -1682,7 +1692,41 @@ footer {
     font-size: 1.6rem; /* ← Texte plus grand */
     line-height: 3;
   }  
+
+/* Style spécifique pour le modal PDF */
+#pdfModal {
+    display: none; /* Masque le modal par défaut */
+    position: fixed; /* Fixe le modal par rapport à la fenêtre */
+    top: 0; /* Le fond noir commence du haut */
+    left: 0; /* Le fond noir commence du côté gauche */
+    width: 100%; /* Couvre toute la largeur de l'écran */
+    height: 100%; /* Couvre toute la hauteur de l'écran */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre couvrant toute la fenêtre */
+    z-index: 1000; /* S'assure que le modal est au-dessus des autres éléments */
+    display: none; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+  }
   
+  /* Contenu du modal PDF */
+  #pdfModal .pdf-modal-content {
+    top: 10%;
+    left: 28%;
+    position: relative; /* Positionnement relatif pour le contenu */
+    width: 80%; /* Largeur du modal */
+    height: 80%; /* Hauteur du modal */
+    padding: 10px; /* Espacement autour du contenu */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  /* iframe contenant le PDF */
+  #pdfModal iframe {
+    width: 100%; /* Le PDF occupe toute la largeur du modal */
+    height: 100%; /* Le PDF occupe toute la hauteur du modal */
+    border: none; /* Pas de bordure autour de l'iframe */
+  }
+  
+
   .close {
     position: absolute;
     right: 1rem;
@@ -2053,7 +2097,7 @@ footer {
 
     .project-box {
         flex-direction: column;
-        height: 800px
+        height: 800px;
     }
 
     .image-div,

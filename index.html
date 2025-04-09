@@ -88,6 +88,12 @@
             </a>
           </li>
 
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#certif" aria-label="certifications menu button">
+              &#60;/Certifications&#62;
+            </a>
+          </li>
+
           <li class="footer" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#footer" aria-label="projects menu button">
               &#60;/Contact&#62;
@@ -146,8 +152,13 @@
           </a>
         </li>
         <li id="footer-mobile-tab" class="mobile-navbar-tabs-li footer" onclick="hidemenubyli()">
+          <a href="#certif" tabindex="0" aria-label="certification menu button">
+            &#60;/Certifications&#62;
+          </a>
+        </li>
+        <li id="footer-mobile-tab" class="mobile-navbar-tabs-li footer" onclick="hidemenubyli()">
           <a href="#footer" tabindex="0" aria-label="footer menu button">
-            &#60;/Projets&#62;
+            &#60;/Contact&#62;
           </a>
         </li>
       </ul>
@@ -552,13 +563,15 @@
 
           <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box2" id="project-box2">
+            <div class="project-box project-box2" id="project-box2" onclick="openModal('projectModal4',0)">
               <div class="info-div">
                 <img src="src/png/gsblogo.png" alt="GSB website favicon" class="faviconforProject" />
                 <article class="ProjectHeading">GSB</article>
                 <p class="ProjectDescription">
-                  A website for University Maharaja College fest "Aquaregia"
-                  for event registrations.
+                  Ce projet est un site qui permet aux visiteurs médicaux de gérer leurs frais forfaitaires et hors forfaitaires générés par l'activité de visite médicale.
+                </p>
+                <p class="ProjectDescription">
+                  Technologies : HTML, CSS, PHP, SQL.
                 </p>
               </div>
               <div class="image-div">
@@ -568,12 +581,15 @@
           </div>
           <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box4" id="project-box4">
+            <div class="project-box project-box4" id="project-box4" onclick="openModal('projectModal5',0)">
               <div class="info-div">
                 <img src="src/webp/qr-favicon.webp" alt="Qr generator website favicon" class="faviconforProject" />
                 <article class="ProjectHeading">CGB</article>
                 <p class="ProjectDescription">
-                  A webpage to make a QR Code from text using API.
+                  Ce projet est une application bancaire conçue pour gérer les virements entre plusieurs comptes.
+                </p>
+                <p class="ProjectDescription">
+                  Technologies : Java, Maven, Spring.
                 </p>
               </div>
               <div class="image-div">
@@ -584,17 +600,20 @@
 
           <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box3" id="project-box3">
+            <div class="project-box project-box3" id="project-box3" onclick="openModal('projectModal6',0)">
               <div class="info-div">
                 <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
                 <article class="ProjectHeading">Site de Garde Médecin</article>
                 <p class="ProjectDescription">
-                  A webpage to categorize the shows to redirect user to watch
-                  the show.
+                  Le site de garde pour médecin est un site permettant de répertorier les rapports de garde de chaque médecin en fonction
+                  de la date d'envoi et du responsable.
+                </p>
+                <p class="ProjectDescription">
+                  Technologies : HTML, CSS.
                 </p>
               </div>
               <div class="image-div">
-                <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
+                <img src="src/png/medecin.png" alt="site de garde preview image" />
               </div>
             </div>
           </div>
@@ -602,14 +621,15 @@
           <!-- ---------------------- -->
 
           <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box1" id="project-box1">
+            <div class="project-box project-box1" id="project-box1" onclick="openModal('projectModal7',0)">
               <div class="info-div">
                 <img src="src/webp/axocean-favicon.webp" alt="Axocean website favicon" class="faviconforProject" />
                 <article class="ProjectHeading">Projet Alfred Solutions</article>
                 <p class="ProjectDescription">
-                  E-commerce website frontend work to choose people their
-                  favorite design of product and redirect to flipkart shopping
-                  site.
+                  Le projet Alfred Solutions est un projet
+                </p>
+                <p class="ProjectDescription">
+                  Technologies :  Django Python, OpenWrt, SQLite. 
                 </p>
               </div>
               <div class="image-div">
@@ -621,6 +641,58 @@
         </div>
       </div>
     </section>
+
+    <section class="projects-section-container" id="certif">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Certifications">
+            &#60;/Certifications&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+    
+        <div class="project-boxes-div">
+          <!-- Certification 1 -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box" onclick="openPdfModal('pdfModal', 'src/pdf/Attestation.pdf')">
+              <div class="info-div">
+                <article class="ProjectHeading">Certification SecNum Académie</article>
+                <p class="ProjectDescription">Cliquez pour afficher le PDF</p>
+              </div>
+              <div class="image-div">
+                <img src="src/png/anssi.jpeg" alt="secnum academie preview image" />
+              </div>
+            </div>
+          </div>          
+    
+          <!-- Certification 2 -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box" onclick="openPdfModal('pdfModal', 'src/pdf/CertificatRGPD.pdf')">
+              <div class="info-div">
+                <article class="ProjectHeading">Certification RGPD</article>
+                <p class="ProjectDescription">Cliquez pour afficher le PDF</p>
+              </div>
+              <div class="image-div">
+                <img src="src/png/atelierrgpd.png" alt="atelier rgpd preview image" />
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box" onclick="openPdfModal('pdfModal', 'src/pdf/CertificationPIX.pdf')">
+              <div class="info-div">
+                <article class="ProjectHeading">Certification PIX</article>
+                <p class="ProjectDescription">Cliquez pour afficher le PDF</p>
+              </div>
+              <div class="image-div">
+                <img src="src/png/pix.jpg" alt="pix preview image" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>    
   </main>
   <!-- main ends here -->
 
@@ -796,7 +868,11 @@ let currentSlide = {};  // Gère l'index des slides pour chaque modal
 
   const modalId = openModal.id;  // Récupère l'ID du modal ouvert
   if (e.key === "Escape") {
-    closeModal(modalId);
+    if (modalId === "pdfModal") {
+      closePdfModal(modalId);  // Ferme le modal PDF si la touche Échap est pressée
+    } else {
+      closeModal(modalId);  // Ferme un autre modal si la touche Échap est pressée
+    }
   } else if (e.key === "ArrowRight") {
     nextSlide(modalId);
   } else if (e.key === "ArrowLeft") {
@@ -804,6 +880,31 @@ let currentSlide = {};  // Gère l'index des slides pour chaque modal
   }
 });
 
+function openPdfModal(modalId, pdfUrl = null) {
+  const modal = document.getElementById(modalId);
+  if (!modal) return;
+
+  modal.style.display = "block";
+
+  if (pdfUrl) {
+    const viewer = modal.querySelector("iframe");
+    if (viewer) {
+      viewer.src = pdfUrl;
+    }
+  }
+}
+
+function closePdfModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (!modal) return;
+
+  const viewer = modal.querySelector("iframe");
+  if (viewer) {
+    viewer.src = ""; // reset PDF
+  }
+
+  modal.style.display = "none";
+}
 </script>
 
   <!-- Modal -->
@@ -892,11 +993,114 @@ let currentSlide = {};  // Gère l'index des slides pour chaque modal
 
     </div>
     <div class="navigation">
-      <button onclick="prevSlide('projectModal2')">‹</button>
-      <button onclick="nextSlide('projectModal2')">›</button>
+      <button onclick="prevSlide('projectModal3')">‹</button>
+      <button onclick="nextSlide('projectModal3')">›</button>
     </div>
   </div>
 </div>
 
+<div id="projectModal4" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('projectModal4')">&times;</span>
+
+    <div class="slides">
+
+      <div class="slide active">
+        <h2>Bloc de compétences</h2>
+          <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
+          <p>✔️ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>✔️ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>✔️ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>✔️ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide('projectModal4')">‹</button>
+      <button onclick="nextSlide('projectModal4')">›</button>
+    </div>
+  </div>
+</div>
+
+<div id="projectModal5" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('projectModal5')">&times;</span>
+
+    <div class="slides">
+
+      <div class="slide active">
+        <h2>Bloc de compétences</h2>
+          <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
+          <p>✔️ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>❌ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>✔️ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>✔️ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide('projectModal5')">‹</button>
+      <button onclick="nextSlide('projectModal5')">›</button>
+    </div>
+  </div>
+</div>
+
+<div id="projectModal6" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('projectModal6')">&times;</span>
+
+    <div class="slides">
+
+      <div class="slide active">
+        <h2>Bloc de compétences</h2>
+          <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
+          <p>❌ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>✔️ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>❌ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>❌ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide('projectModal6')">‹</button>
+      <button onclick="nextSlide('projectModal6')">›</button>
+    </div>
+  </div>
+</div>
+
+<div id="projectModal7" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('projectModal7')">&times;</span>
+
+    <div class="slides">
+
+      <div class="slide active">
+        <h2>Bloc de compétences</h2>
+          <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
+          <p>✔️ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>❌ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>✔️ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>✔️ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide('projectModal7')">‹</button>
+      <button onclick="nextSlide('projectModal7')">›</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div id="pdfModal" class="modal">
+  <div class="modal-content pdf-modal-content">
+    <span class="close" onclick="closePdfModal('pdfModal')">&times;</span>
+    <iframe id="pdfViewer" src="" width="100%" height="600px" style="border:none;"></iframe>
+  </div>
+</div>
 </body>
 </html>
