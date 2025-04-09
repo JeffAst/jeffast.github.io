@@ -1,5 +1,5 @@
-# <a href="https://vinodjangid07.github.io/" target="_blank">My Portfolio</a>
-<p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
+# <a href="https://jeffast.github.io/" target="_blank">Mon Portfolio</a>
+<p align="justify">Ce site web présente mes projets, mon parcours, mes projets et mes contacts.</p>
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://vinodjangid07.github.io/)
