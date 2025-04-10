@@ -1686,46 +1686,49 @@ footer {
     color: #fff;
     max-width: 1100px; /* ← Plus large */
     width: 90%;
-    position: relative;
+    position: fixed;
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     font-size: 1.6rem; /* ← Texte plus grand */
     line-height: 3;
+    justify-content: center;
+    align-items: center;
   }  
 
-/* Style spécifique pour le modal PDF */
+/* Modal PDF plein écran avec fond sombre et centré */
 #pdfModal {
-    display: none; /* Masque le modal par défaut */
-    position: fixed; /* Fixe le modal par rapport à la fenêtre */
-    top: 0; /* Le fond noir commence du haut */
-    left: 0; /* Le fond noir commence du côté gauche */
-    width: 100%; /* Couvre toute la largeur de l'écran */
-    height: 100%; /* Couvre toute la hauteur de l'écran */
-    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre couvrant toute la fenêtre */
-    z-index: 1000; /* S'assure que le modal est au-dessus des autres éléments */
-    display: none; /* Utilise flexbox pour centrer le contenu */
-    justify-content: center; /* Centre le contenu horizontalement */
-    align-items: center; /* Centre le contenu verticalement */
+    display: none; /* caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* fond semi-transparent */
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
   }
   
-  /* Contenu du modal PDF */
+  /* Contenu du modal PDF centré */
   #pdfModal .pdf-modal-content {
-    top: 10%;
-    left: 28%;
-    position: relative; /* Positionnement relatif pour le contenu */
-    width: 80%; /* Largeur du modal */
-    height: 80%; /* Hauteur du modal */
-    padding: 10px; /* Espacement autour du contenu */
-    border-radius: 10px; /* Coins arrondis */
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    max-height: 90vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
   
-  /* iframe contenant le PDF */
+  /* iframe PDF prend tout l’espace dispo */
   #pdfModal iframe {
-    width: 100%; /* Le PDF occupe toute la largeur du modal */
-    height: 100%; /* Le PDF occupe toute la hauteur du modal */
-    border: none; /* Pas de bordure autour de l'iframe */
-  }
-  
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+  } 
 
   .close {
     position: absolute;
@@ -2169,6 +2172,10 @@ footer {
 
     .project-boxes-div {
         padding: 40px 0
+    }
+    #pdfModal .pdf-modal-content {
+        width: 95%;
+        height: 90%;
     }
 }
 
