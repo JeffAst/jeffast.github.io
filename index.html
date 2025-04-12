@@ -64,6 +64,12 @@
             </a>
           </li>
 
+          <li class="bts" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#bts" aria-label="bts sio menu button">
+              &#60;/BTS_SIO&#62;
+            </a>
+          </li>
+
           <li class="parcours-sco" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
             <a href="#parcours-sco" aria-label="about menu button">
               &#60;/Parcours_Scolaire&#62;
@@ -131,12 +137,17 @@
             &#60;/A_Propos&#62;
           </a>
         </li>
+        <li id="bts-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#bts" tabindex="0" aria-label="about menu button">
+            &#60;/BTs_SIO&#62;
+          </a>
+        </li>
         <li id="parcours-sco-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
           <a href="#parcours-sco" tabindex="0" aria-label="about menu button">
             &#60;/Parcours_Scolaire&#62;
           </a>
         </li>
-        <li id="parcours-sco-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+        <li id="parcours-pro-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
           <a href="#parcours-pro" tabindex="0" aria-label="about menu button">
             &#60;/Parcours_Professionnel&#62;
           </a>
@@ -284,7 +295,58 @@
       </div>
     </section>
     <!-- about section ends  -->
-
+    <section class="about-section-container" id="bts" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/BTS_SIO&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="bts-content">
+          <div class="bts-intro-card">
+            <p>
+              Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est un diplôme Bac+2 orienté informatique. Il forme des professionnels capables de concevoir, maintenir et sécuriser des solutions informatiques en entreprise.
+            </p>
+            <p>
+              Deux parcours sont proposés :
+            </p>
+          </div>
+        
+          <div class="bts-options">
+            <div class="bts-card">
+              <div class="bts-icon">🛠️</div>
+              <h3>Option A : SISR</h3>
+              <p class="bts-sub">Solutions d’Infrastructure, Systèmes et Réseaux</p>
+              <p>
+                Spécialisation en gestion et sécurisation des systèmes et réseaux.
+              </p>
+              <ul>
+                <li>Maintenance de serveurs</li>
+                <li>Sécurité informatique</li>
+                <li>Support utilisateur & administration système</li>
+              </ul>
+              <p><strong>Débouchés :</strong> Admin système, technicien réseau, support IT...</p>
+            </div>
+        
+            <div class="bts-card">
+              <div class="bts-icon">💻</div>
+              <h3>Option B : SLAM</h3>
+              <p class="bts-sub">Solutions Logicielles et Applications Métiers</p>
+              <p>
+                Spécialisation en développement d'applications métiers.
+              </p>
+              <ul>
+                <li>Développement web / mobile</li>
+                <li>Gestion de bases de données</li>
+                <li>Analyse des besoins utilisateurs</li>
+              </ul>
+              <p><strong>Débouchés :</strong> Développeur, intégrateur, analyste programmeur...</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
 
     <section class="parcours-section-container" id="parcours-sco" data-aos="fade-up">
       <div class="parcours-section">
@@ -626,7 +688,7 @@
                 <img src="src/png/eets.png" alt="Projet AS website favicon" class="faviconforProject" />
                 <article class="ProjectHeading">Projet Alfred Solutions</article>
                 <p class="ProjectDescription">
-                  Le projet Alfred Solutions est un projet
+                  Le projet Alfred Solutions est un site permettant la gestion des parkings, ports et piscines de Toulon.
                 </p>
                 <p class="ProjectDescription">
                   Technologies :  Django Python, OpenWrt, SQLite. 

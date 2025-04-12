@@ -405,7 +405,9 @@ noscript {
     justify-content: space-between;
     z-index: 999;
     border: 1px solid var(--color-navbarBorder-dark);
-    border-radius: 50px
+    border-radius: 50px;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
 }
 
 .navbar-tabs,
@@ -422,25 +424,28 @@ noscript {
 
 .navbar-tabs {
     display: flex;
-    width: 80%
+    width: 100%; /* S'assure que le conteneur occupe toute la largeur de la navbar */
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur mobile */
+    padding: 0 10px; /* Ajout de marges internes pour éviter que les éléments ne soient collés au bord */
 }
 
 .navbar-tabs-ul {
-    width: 100%;
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-    gap: 80px;
-    color: var(--color-white)
+    justify-content: flex-start; /* Alignement à gauche pour éviter l'espace entre les éléments */
+    gap: 40px; /* Espacement plus important entre les éléments */
+    color: var(--color-white);
+    padding: 0; /* S'assurer qu'il n'y a pas de padding supplémentaire */
 }
 
 .navbar-tabs-ul li {
-    width: fit-content;
+    width: fit-content; /* Les éléments prennent leur taille selon le contenu */
     height: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 .navbar-tabs-ul li:hover:before {
@@ -452,7 +457,7 @@ noscript {
 
 .navbar-tabs-ul a {
     color: var(--color-white);
-    font-weight: 100
+    font-weight: 100;
 }
 
 .logo {
@@ -467,6 +472,100 @@ noscript {
     user-select: none
 }
 
+.bts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 4rem;
+    color: #fff;
+  }
+  
+  .bts-intro-card {
+    background: #13131a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-align: center;
+  }
+  
+  .bts-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .bts-card {
+    background: #1a1a24;
+    border-radius: 32px;
+    padding: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 35px rgba(255, 0, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bts-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 0 50px rgba(255, 0, 255, 0.2);
+  }
+  
+  .bts-icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .bts-card h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .bts-sub {
+    color: #aaa;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .bts-card p,
+  .bts-card ul {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .bts-card ul {
+    padding-left: 2rem;
+    list-style: disc;
+    margin-bottom: 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bts-options {
+      grid-template-columns: 1fr;
+    }
+  
+    .bts-card {
+      padding: 2.5rem;
+    }
+  
+    .bts-card h3 {
+      font-size: 1.8rem;
+    }
+  
+    .bts-sub {
+      font-size: 1.2rem;
+    }
+  
+    .bts-card p,
+    .bts-card ul {
+      font-size: 1.05rem;
+    }
+  }    
+  
 .face,
 .logo-top {
     width: 100%;
