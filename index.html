@@ -95,6 +95,12 @@
           </li>
 
           <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#epreuve" aria-label="projects menu button">
+              &#60;/Epreuve_E5&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#certif" aria-label="certifications menu button">
               &#60;/Certifications&#62;
             </a>
@@ -160,6 +166,11 @@
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
             &#60;/Projets&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#epreuve" tabindex="0" aria-label="projects menu button">
+            &#60;/Epreuve_E5&#62;
           </a>
         </li>
         <li id="footer-mobile-tab" class="mobile-navbar-tabs-li footer" onclick="hidemenubyli()">
@@ -704,6 +715,32 @@
       </div>
     </section>
 
+    <section class="projects-section-container" id="epreuve">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Epreuve_E5&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="project-boxes-div">
+          <!-- Certification 1 -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box" onclick="openPdfModal('pdfModal', 'src/pdf/Tableau_de_Synthèse.pdf')">
+              <div class="info-div">
+                <article class="ProjectHeading">Tableau de synthèse</article>
+                <p class="ProjectDescription">L’épreuve E5 du BTS SIO est un oral de 40 minutes évaluant la capacité du candidat à présenter ses compétences en support informatique, à partir d’un dossier numérique, devant un jury professionnel.</p>
+              </div>
+              <div class="image-div">
+                <img src="src/png/tableau.png" alt="tableau de synthèse preview image" />
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
     <section class="projects-section-container" id="certif">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
@@ -1139,7 +1176,52 @@ function closePdfModal(modalId) {
 
     <div class="slides">
 
+
       <div class="slide active">
+        <h2>Configuration des Raspberry PI avec le système d’exploitation OpenWrt</h2>
+        <img src="src/png/openwrt.png" alt="OpenWrt Download" style="width:100%; border-radius: 8px;" />
+        <p>Installation du système d'exploitation sur une micro SD en fonction du modèle de Raspberry PI</p>
+      </div>
+
+      <div class="slide">
+        <h2>Configuration des Raspberry PI avec le système d’exploitation OpenWrt</h2>
+        <img src="src/png/raspberrypiimager.png" alt="Imager Raspberry PI" style="width:100%; border-radius: 8px;" />
+        <p>Interface Imager du Raspberry PI comprenant le modèle du Raspberry PI, le système d'exploitation à installer dessus et le stockage utilisé</p>
+      </div>
+
+      <div class="slide">
+        <h2>Bloc de compétences</h2>
+          <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
+          <p>❌ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>❌ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>✔️ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>❌ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+      <div class="slide">
+        <h2>Déploiement de l’application sur des Raspberry PI</h2>
+        <img src="src/png/raspberrypiimager.png" alt="Imager Raspberry PI" style="width:100%; border-radius: 8px;" />
+        <p>Interface Imager du Raspberry PI comprenant le modèle du Raspberry Pi, le système d'exploitation à installer dessus et le stockage utilisé</p>
+      </div>
+
+      <div class="slide">
+        <h2>Bloc de compétences</h2>
+          <p>❌ 1.1 - Gérer le patrimoine informatique</p>
+          <p>❌ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>❌ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>❌ 1.4 - Travailler en mode projet</p>
+          <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>❌ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+      <div class="slide">
+        <h2>Développement du scanner réseau et ajout de ses fonctionnalités avec le framework Django Python</h2>
+        <img src="src/png/raspberrypiimager.png" alt="Imager Raspberry PI" style="width:100%; border-radius: 8px;" />
+        <p>Interface Imager du Raspberry PI comprenant le modèle du Raspberry Pi, le système d'exploitation à installer dessus et le stockage utilisé</p>
+      </div>
+
+      <div class="slide">
         <h2>Bloc de compétences</h2>
           <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
           <p>✔️ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
