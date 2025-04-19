@@ -666,7 +666,7 @@
                 </p>
               </div>
               <div class="image-div">
-                <img src="src/webp/QRgeneratorProject.webp" alt="qr generator website preview image" />
+                <img src="src/png/cgb.png" alt="CGB website preview image" />
               </div>
             </div>
           </div>
@@ -682,7 +682,7 @@
                   de la date d'envoi et du responsable.
                 </p>
                 <p class="ProjectDescription">
-                  Technologies : HTML, CSS.
+                  Technologies : HTML, CSS, PHP.
                 </p>
               </div>
               <div class="image-div">
@@ -1152,13 +1152,82 @@ function closePdfModal(modalId) {
 
     <div class="slides">
 
+
       <div class="slide active">
+        <h2>Site de Garde médecin</h2>
+        <img src="src/png/medecin.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Aperçu du site de garde lorsque je suis arrivé au début du stage</p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde médecin</h2>
+        <img src="src/png/sitemedecin2.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Aperçu du site de garde sans la liste des médecins</p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde médecin</h2>
+        <img src="src/png/sitemedecin.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Aperçu du site de garde avec la liste des médecins</p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde médecin</h2>
+        <img src="src/png/valide.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Dû à un fichier manquant, j'ai du changer d'extension des fichiers rentrés par les médecins</p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde Médecin</h2>
+        <img src="src/png/extension.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Changement de type d'extension : le fichier garde son extension et ne passe pas en pdf</p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde Médecin</h2>
+        <img src="src/png/cas.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>Une fois le fichier manquant obtenu, j'ai eu des problèmes de droit sur le fichier CAS, il s'agissait d'une fonction obsolète depuis PHP 7.0 "__autoload()" qui empêchait cela, je l'ai alors remplacé par "spl_autoload_register()".
+          Malgré cela, je n'ai pas réussi à tester la connexion car j'utilisais WAMP et que le serveur web qui allait accueillir le nouveau site était en préparation.
+        </p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde Médecin</h2>
+        <img src="src/png/bloc.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>J'ai donc continuer à développer une solution sur le côté en attendant l'arrivée du serveur web.
+        </p>
+      </div>
+
+      <div class="slide">
+        <h2>Site de Garde Médecin</h2>
+        <img src="src/png/amelio.png" alt="Site Médecin" style="width:100%; border-radius: 8px;" />
+        <p>A la fin du stage, j'ai proposé à mon maître de stage une piste d'amlioration qui serait d'empêcher les utilisateurs de choisir leurs noms afin d'empêcher une erreur ou même un acte de malveillance vis à vis des fichiers téléchargés</p>
+      </div>
+
+      <div class="slide">
         <h2>Bloc de compétences</h2>
           <p>✔️ 1.1 - Gérer le patrimoine informatique</p>
           <p>❌ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
           <p>✔️ 1.3 - Développer la présence en ligne de l’organisation</p>
           <p>❌ 1.4 - Travailler en mode projet</p>
           <p>✔️ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
+          <p>❌ 1.6 - Organiser son développement professionnel</p>
+      </div>
+
+      <div class="slide">
+        <h2>Résolution de problèmes de scripts PHP</h2>
+        <img src="src/png/php_logo.png" alt="PHP" style="width:100%; border-radius: 8px;" />
+        <p>Pendant l'entièreté de mon stage pendant que je travaillais sur le site ou même pendant les moment où je devais attendre, 
+          mon maître de stage m'as confié divers script PHP sur lesquels il travaillait et que je devais résoudre car il souhaitais soit tester mes compétences, soit car il ne trouvait pas de solutions</p>
+      </div>
+
+      <div class="slide">
+        <h2>Bloc de compétences</h2>
+          <p>❌ 1.1 - Gérer le patrimoine informatique</p>
+          <p>✔️ 1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+          <p>❌ 1.3 - Développer la présence en ligne de l’organisation</p>
+          <p>❌ 1.4 - Travailler en mode projet</p>
+          <p>❌ 1.5 - Mettre à disposition des utilisateurs un service informatique</p>
           <p>❌ 1.6 - Organiser son développement professionnel</p>
       </div>
 
@@ -1219,7 +1288,7 @@ function closePdfModal(modalId) {
         <h2>Développement du scanner réseau et ajout de ses fonctionnalités avec le framework Django Python</h2>
         <img src="src/png/reseau.png" alt="Réseau E&S" style="width:100%; max-height:500px; border-radius: 8px;" />
         <p>Dans le cadre d’un projet en binôme, au sein d’une équipe de quatre stagiaires, il a fallu créer une interface web embarquée pour remplacer
-           l’administration OpenWrt sur Raspberry PI configurés comme routeurs. Chaque binôme disposait de son propre réseau isolé, mis en place via une segmentation du réseau local.</p>
+           l’administration OpenWrt sur Raspberry PI configurés comme routeurs. Chaque binôme disposait de son propre réseau isolé, mis en p*+lace via une segmentation du réseau local.</p>
       </div>
 
       <div class="slide">
