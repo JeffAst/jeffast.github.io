@@ -1139,6 +1139,16 @@ noscript {
     -webkit-text-fill-color: transparent
 }
 
+.timeline-title{
+    font-size: 1.5rem;
+    font-family: fira code;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
 .projectsHeadingP,
 .sectionHeadingP,
 .skillsHeadingP {
@@ -1225,6 +1235,14 @@ noscript {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    text-align: center;
+    color: #444;
+  }  
   
   /* Éléments de la timeline */
   .timeline-item {
@@ -1878,7 +1896,7 @@ footer {
     margin: 0 0.5rem;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 3rem;
   }
   
   .navigation button:hover {
