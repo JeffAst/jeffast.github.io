@@ -423,6 +423,7 @@ noscript {
 }
 
 .navbar-tabs {
+    justify-content: center;
     display: flex;
     width: 100%; /* S'assure que le conteneur occupe toute la largeur de la navbar */
     overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
