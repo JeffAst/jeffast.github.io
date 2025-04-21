@@ -334,7 +334,7 @@ html {
 .logo:hover {
     transition-duration: 1s
 }
-
+  
 #labelforsound {
     position: relative;
     justify-content: center;
@@ -1619,6 +1619,17 @@ footer {
     text-decoration: line-through var(--color-white)
 }
 
+.description {
+    display: none;
+    margin: 4px 0 12px 20px;
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+  
+  .competence:hover .description {
+    display: block;
+  }
+  
 footer {
     width: 100%;
     height: fit-content;
